@@ -52,7 +52,6 @@ const reducer = (state = initState, action) => {
             isTaskModalVisible: false,
         };
     case actions.REMOVE_TASK_SUCCESS:
-        debugger
         const updatedTasks = state.taskList.filter(task => task.id !== action.taskId)
         return {
             ...state,
