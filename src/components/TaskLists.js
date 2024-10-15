@@ -22,8 +22,8 @@ const TaskLists = () => {
     <Table
         columns={tableColumns}
         dataSource={taskList}
-        pagination={true}
         loading={pageLoader}
+        rowKey={'id'}
         pagination={{ defaultPageSize: 3 }}
     />
   );
